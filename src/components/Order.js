@@ -6,6 +6,8 @@ class Order extends React.Component {
     const fish = this.props.fishes[key];
     const count = this.props.order[key];
     const isAvailable = fish.status === "available";
+    if (!fish) return null; // to avoid issues with set localStorage to state before items are loaded from firebase  
+
     if (!isAvailable) {
       return (
         <li key={key}>
@@ -15,7 +17,7 @@ class Order extends React.Component {
     }
     return (
       <li key={key}>
-        {count} lbs {fish.name}
+        {count}00gr {fish.name}
         {formatPrice(count * fish.price)}
       </li>
     );
@@ -26,6 +28,7 @@ class Order extends React.Component {
       const fish = this.props.fishes[key];
       const count = this.props.order[key];
       const isAvailable = fish && fish.status === "available";
+
       if (isAvailable) {
         return prevTotal + count * fish.price;
       }
