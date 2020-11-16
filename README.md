@@ -1,4 +1,4 @@
-With this Catch Of The Day app one can explore real-time trendy seafood market with following features:
+With this [Catch Of The Day](https://catch-of-the-day-meleshkevich.netlify.app/) app one can explore real-time trendy seafood market with following features:
  
 - Enter e-shop with a random funny name;
 - Sign in to manage store inventory with either `Github`, `Twitter` or `Facebook` log-in buttons; 
