@@ -20,7 +20,7 @@ This is a study project to learn React concepts and functionality:
   
 --------------------------------------------
 To run this project locally: 
-- clone branch master with `$ git clone https://github.com/meleshkevich/star-db`
+- clone branch master with `$ git clone https://github.com/meleshkevich/fishmarket`
   or fork it and then clone it from your forked repo
 - `cd fishmarket`
 - `npm install`
