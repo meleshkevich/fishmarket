@@ -1,8 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import {getFunName} from'../helpers';
 import '../css/style.css';
 
 class StorePicker extends React.Component {
+  static propTypes = {
+    history: PropTypes.object.isRequired
+  };
     myImput = React.createRef();
 
     goToStore = event => {
